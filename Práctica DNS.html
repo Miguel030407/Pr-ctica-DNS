@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Qué es DNS y cómo funciona">
+    <title>Qué es DNS y cómo funciona</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(19, 28, 151, 0.1);
+        }
+        h1, h2 {
+            color: #f50303;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Qué es DNS y cómo funciona</h1>
+</header>
+
+<section>
+    <h2>¿Qué es DNS?</h2>
+    <p>El Sistema de Nombres de Dominio (DNS por sus siglas en inglés, Domain Name System) es un sistema que traduce los nombres de dominio legibles por humanos (como www.ejemplo.com) en direcciones IP (como 192.168.1.1) que son utilizadas por los dispositivos en la red para localizar e identificar servidores y otros dispositivos.</p>
+
+    <img src="img/DNS-diagrama.jpg" alt="Diagrama de funcionamiento del DNS">
+
+    <h2>¿Cómo funciona el DNS?</h2>
+    <p>El proceso básico de funcionamiento del DNS implica varias etapas:</p>
+    <ol>
+        <li>El usuario ingresa una URL en su navegador (por ejemplo, www.ejemplo.com).</li>
+        <li>El navegador envía una solicitud al servidor DNS para obtener la dirección IP correspondiente al nombre de dominio.</li>
+        <li>Si el servidor DNS local no conoce la IP, consulta a otros servidores DNS en Internet hasta encontrar la dirección correcta.</li>
+        <li>Una vez que se obtiene la dirección IP, el navegador puede conectarse al servidor web para cargar la página.</li>
+    </ol>
+
+    <h2>Componentes del DNS</h2>
+    <ul>
+        <li><strong>Servidores DNS Recursivos:</strong> Estos servidores son los encargados de buscar la dirección IP solicitada.</li>
+        <li><strong>Servidores de Nombres Autorizados:</strong> Estos servidores contienen la información sobre el dominio y sus registros asociados.</li>
+        <li><strong>Zona de raíz del DNS:</strong> El punto más alto en la jerarquía del DNS que distribuye las consultas a los servidores autorizados correctos.</li>
+    </ul>
+</section>
+
+</body>
+</html>
